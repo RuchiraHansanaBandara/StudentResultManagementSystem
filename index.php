@@ -30,8 +30,109 @@ include('includes/config.php');
                 </div>
             </div>
         </nav>
-        <!-- Header - set the background image for the header in the line below-->
-        <header class="py-5 bg-image-full" style="background-image: url('images/background-image.jpg')">
+<!-- Header - Image Carousel with Increased Height -->
+<header class="py-1 bg-image-full">
+    <div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-bs-target="#headerCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#headerCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#headerCarousel" data-bs-slide-to="2"></li>
+            <li data-bs-target="#headerCarousel" data-bs-slide-to="3"></li>
+            <li data-bs-target="#headerCarousel" data-bs-slide-to="4"></li>
+            <li data-bs-target="#headerCarousel" data-bs-slide-to="5"></li>
+            <li data-bs-target="#headerCarousel" data-bs-slide-to="6"></li>
+            <li data-bs-target="#headerCarousel" data-bs-slide-to="7"></li>
+            <li data-bs-target="#headerCarousel" data-bs-slide-to="8"></li>
+            <li data-bs-target="#headerCarousel" data-bs-slide-to="9"></li>
+            <li data-bs-target="#headerCarousel" data-bs-slide-to="10"></li>
+            <li data-bs-target="#headerCarousel" data-bs-slide-to="11"></li>
+        </ol>
+
+        <!-- Carousel Inner -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/img-1.jpg" class="d-block w-100 carousel-image" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/img-2.jpg" class="d-block w-100 carousel-image" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/img-3.jpg" class="d-block w-100 carousel-image" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="images/img-4.jpg" class="d-block w-100 carousel-image" alt="Image 4">
+            </div>
+            <div class="carousel-item">
+                <img src="images/img-5.jpg" class="d-block w-100 carousel-image" alt="Image 5">
+            </div>
+            <div class="carousel-item">
+                <img src="images/img-6.jpg" class="d-block w-100 carousel-image" alt="Image 6">
+            </div>
+            <div class="carousel-item">
+                <img src="images/img-7.jpg" class="d-block w-100 carousel-image" alt="Image 7">
+            </div>
+            <div class="carousel-item">
+                <img src="images/img-8.jpg" class="d-block w-100 carousel-image" alt="Image 8">
+            </div>
+            <div class="carousel-item">
+                <img src="images/img-9.jpg" class="d-block w-100 carousel-image" alt="Image 9">
+            </div>
+            <div class="carousel-item">
+                <img src="images/img-10.jpg" class="d-block w-100 carousel-image" alt="Image 10">
+            </div>
+            <div class="carousel-item">
+                <img src="images/img-11.jpg" class="d-block w-100 carousel-image" alt="Image 11">
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#headerCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#headerCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+</header>
+
+<!-- Custom CSS -->
+<style>
+    /* Control the height of the carousel */
+    #headerCarousel {
+        height: 550px; /* Increased height of the carousel container */
+    }
+
+    /* Control the height of the images */
+    .carousel-image {
+        height: 500px; /* Increased height of the images */
+        object-fit: cover; /* Ensure the image covers the container */
+    }
+
+    /* Adjust image height on smaller screens */
+    @media (max-width: 768px) {
+        #headerCarousel {
+            height: 500px; /* Increased for smaller screens */
+        }
+
+        .carousel-image {
+            height: 450px; /* Increased image height for smaller screens */
+        }
+    }
+
+    @media (max-width: 576px) {
+        #headerCarousel {
+            height: 450px; /* Adjust for very small screens */
+        }
+
+        .carousel-image {
+            height: 400px; /* Further increased image height on small screens */
+        }
+    }
+</style>
+
     
         </header>
         <!-- Content section-->
