@@ -125,7 +125,6 @@
                                                                     <th>Email</th>
                                                                     <th>Gender</th>
                                                                     <th>Creation Date</th>
-                                                                    <th>Updation Date</th>
                                                                     <th>Action</th>
                                                                 </tr>
                                                             </thead>
@@ -137,7 +136,6 @@
                                                                     <th>Email</th>
                                                                     <th>Gender</th>
                                                                     <th>Creation Date</th>
-                                                                    <th>Updation Date</th>
                                                                     <th>Action</th>
                                                                 </tr>
                                                             </tfoot>
@@ -154,11 +152,10 @@
         <tr>
                                                                             <td><?php echo htmlentities($cnt); ?></td>
                                                                             <td><?php echo htmlentities($result->TeacherName); ?></td>
-                                                                            <td><?php echo htmlentities($result->TeachersId); ?></td>
+                                                                            <td><?php echo htmlentities($result->TeacherID); ?></td>
                                                                             <td><?php echo htmlentities($result->TeacherEmail); ?></td>
                                                                             <td><?php echo htmlentities($result->Gender); ?></td>
                                                                             <td><?php echo htmlentities($result->RegDate); ?></td>
-                                                                            <td><?php echo htmlentities($result->UpdationDate); ?></td>
                                                                             <td>
                                                                                 <a href="edit-teacher.php?TeachersId=<?php echo htmlentities($result->TeachersId); ?>" class="btn btn-info btn-xs">Edit</a>
                                                                                 <a href="manage-teachers.php?TeachersId=<?php echo $result->TeachersId; ?>" onClick="return confirm('Are you sure you want to delete this teacher?')" class="btn btn-danger btn-xs">Delete</a>
