@@ -82,7 +82,7 @@ include('includes/config.php');
                 <img src="images/img-10.jpg" class="d-block w-100 carousel-image" alt="Image 10">
             </div>
             <div class="carousel-item">
-                <img src="images/img-11.jpg" class="d-block w-100 carousel-image" alt="Image 11">
+                <img src="images/img-5.jpg" class="d-block w-100 carousel-image" alt="Image 11">
             </div>
         </div>
 
