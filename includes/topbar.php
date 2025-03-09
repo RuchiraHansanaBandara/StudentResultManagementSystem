@@ -1,4 +1,4 @@
-  <nav class="navbar top-navbar bg-white box-shadow">
+  <nav class="navbar top-navbar box-shadow" style="background-color:rgb(18, 247, 197)">
             	<div class="container-fluid">
                     <div class="row">
                         <div class="navbar-header no-padding">

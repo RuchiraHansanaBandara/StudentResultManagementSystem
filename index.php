@@ -52,13 +52,13 @@ include('includes/config.php');
         <!-- Carousel Inner -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/img-1.jpg" class="d-block w-100 carousel-image" alt="Image 1">
+                <img src="images/img-3.jpg" class="d-block w-100 carousel-image" alt="Image 3">
             </div>
             <div class="carousel-item">
                 <img src="images/img-2.jpg" class="d-block w-100 carousel-image" alt="Image 2">
             </div>
             <div class="carousel-item">
-                <img src="images/img-3.jpg" class="d-block w-100 carousel-image" alt="Image 3">
+                <img src="images/img-1.jpg" class="d-block w-100 carousel-image" alt="Image 1">
             </div>
             <div class="carousel-item">
                 <img src="images/img-4.jpg" class="d-block w-100 carousel-image" alt="Image 4">
@@ -136,33 +136,30 @@ include('includes/config.php');
     
         </header>
         <!-- Content section-->
-        <section class="py-5">
-            <div class="container my-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <h2>Notice Board</h2>
-                        <hr color="#000" />
-                        <marquee direction="up"  onmouseover="this.stop();" onmouseout="this.start();">
-                   <ul>
- <?php $sql = "SELECT * from tblnotice";
-$query = $dbh->prepare($sql);
-$query->execute();
-$results=$query->fetchAll(PDO::FETCH_OBJ);
-$cnt=1;
-if($query->rowCount() > 0)
-{
-foreach($results as $result)
-{   ?>                      
-<li><a href="notice-details.php?nid=<?php echo htmlentities($result->id);?>" target="_blank"><?php echo htmlentities($result->noticeTitle);?></li>
-<?php }} ?>
-
-                   </ul>
-               </marquee>
-
-                    </div>
-                </div>
+<section class="py-5">
+    <div class="container my-5">
+        <div class="row justify-content-center">.
+            <div class="col-lg-6">
+                <h2>Notice Board</h2>
+                <hr color="#000" />
+                <marquee direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+                    <ul>
+                        <?php
+                        $sql = "SELECT * from tblnotice";
+                        $query = $dbh->prepare($sql);
+                        $query->execute();
+                        $results = $query->fetchAll(PDO::FETCH_OBJ);
+                        $cnt = 1;
+                        if ($query->rowCount() > 0) {
+                            foreach ($results as $result) { ?>
+                                <li><a href="notice-details.php?nid=<?php echo htmlentities($result->id);?>" target="_blank"><?php echo htmlentities($result->noticeTitle);?></a></li>
+                        <?php }} ?>
+                    </ul>
+                </marquee>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
 
         <!-- Footer-->

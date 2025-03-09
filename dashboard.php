@@ -34,7 +34,7 @@ if(strlen($_SESSION['alogin'])=="")
 
                     <div class="main-page">
                         <div class="container-fluid">
-                            <div class="row page-title-div">
+                            <div class="row page-title-div" style="background-color:rgb(211, 233, 227)">
                                 <div class="col-sm-6">
                                     <h2 class="title">Dashboard</h2>
                                   
