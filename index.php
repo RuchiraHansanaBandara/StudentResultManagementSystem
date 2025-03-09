@@ -17,7 +17,7 @@ include('includes/config.php');
     </head>
     <body>
         <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:rgb(212, 65, 97)">
             <div class="container">
                 <a class="navbar-brand" href="index.php">SRMS-(Student Result Management System)</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -82,7 +82,7 @@ include('includes/config.php');
                 <img src="images/img-10.jpg" class="d-block w-100 carousel-image" alt="Image 10">
             </div>
             <div class="carousel-item">
-                <img src="images/img-5.jpg" class="d-block w-100 carousel-image" alt="Image 11">
+                <img src="images/img-5.jpg" class="d-block w-100 carousel-image" alt="Image 5">
             </div>
         </div>
 
@@ -166,7 +166,7 @@ foreach($results as $result)
 
 
         <!-- Footer-->
-        <footer class="py-5 bg-dark">
+        <footer class="py-5" style="background-color:rgb(212, 65, 97)">
             <div class="container"><p class="m-0 text-center text-white"> Student Result Management System</p></div>
         </footer>
         <!-- Bootstrap core JS-->
