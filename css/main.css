@@ -4680,6 +4680,7 @@ code:not(.language-html) {
 
 .form-group label {
   font-size: 95%;
+  color: #f2f2f2;
 }
 
 .form-group .help-block {

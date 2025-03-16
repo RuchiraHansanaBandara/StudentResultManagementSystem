@@ -45,6 +45,23 @@ $error="Something went wrong. Please try again";
         <link rel="stylesheet" href="css/main.css" media="screen" >
         <script src="js/modernizr/modernizr.min.js"></script>
          <style>
+
+.form-group label {
+        color: #FF5733; /* Set to your desired color (e.g., red) */
+    }
+
+    .form-group.has-success label {
+        color:rgb(63, 40, 167); /* Green color for success */
+    }
+
+    .help-block {
+        color: #FF5733; /* Change to your desired color (e.g., red) */
+    }
+
+    .form-group.has-success .help-block {
+        color:rgb(96, 177, 209); /* Green color for success */
+    }
+
         .errorWrap {
     padding: 10px;
     margin: 0 0 20px 0;
@@ -152,7 +169,7 @@ else if($error){?>
   <div class="form-group has-success">
 
                                                         <div class="">
-                                                           <button type="submit" name="submit" class="btn btn-success btn-labeled">Submit<span class="btn-label btn-label-right"><i class="fa fa-check"></i></span></button>
+                                                           <button type="submit" name="submit" class="btn btn-success btn-labeled" style="background-color:rgb(175, 166, 43); border-color:rgb(241, 6, 53);">Submit<span class="btn-label btn-label-right"><i class="fa fa-check"></i></span></button>
                                                     </div>
 
 
