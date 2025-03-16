@@ -40,14 +40,40 @@ echo "<script type='text/javascript'> document.location = 'dashboard.php'; </scr
         <link rel="stylesheet" href="css/font-awesome.min.css" media="screen" >
         <link rel="stylesheet" href="css/animate-css/animate.min.css" media="screen" >
         <link rel="stylesheet" href="css/main.css" media="screen" >
+        <link rel="stylesheet" href="css/cube.css" media="screen">
+        <style>
+            .cube {
+                background-color:rgb(75, 99, 83) !important; /* Change this color */
+            }
+
+            body {
+                background-color:rgb(59, 55, 50) !important; /* Change this color */
+            }
+            .col-lg-3 {
+    margin-left: 25px; /* Adjust the value as needed */
+}
+
+
+        </style>
         <script src="js/modernizr/modernizr.min.js"></script>
     </head>
     <body class="">
+         <!-- Cube container to fill the full background -->
+    <div class="cube-container">
+            <!-- Create a large number of cubes dynamically -->
+            <?php
+            // Generate 300 cubes for better coverage
+            for ($i = 0; $i < 300; $i++) {
+                echo '<div class="cube" style="top:' . rand(0, 100) . '%; left:' . rand(0, 100) . '%; animation-delay:' . rand(0, 5) . 's;"></div>';
+            }
+            ?>
+        </div>
         <div class="main-wrapper">
 
             <div class="">
                 <div class="row">
- <h1 align="center">Student Result Management System</h1>
+                <h1 align = "center" style="color: white;">Student Result Management System</h1>
+
                     
                          <div class="col-lg-3"></div>
                     <div class="col-lg-6">
@@ -57,7 +83,7 @@ echo "<script type='text/javascript'> document.location = 'dashboard.php'; </scr
 
                                     <div class="row mt-30 ">
                                         <div class="col-md-11">
-                                            <div class="panel">
+                                            <div class="panel" style="background-color:rgb(221, 223, 216);">
                                                 <div class="panel-heading">
                                                     <div class="panel-title text-center">
                                                         <h4>Admin Login</h4>
@@ -82,7 +108,9 @@ echo "<script type='text/javascript'> document.location = 'dashboard.php'; </scr
                                                         <div class="form-group mt-20">
                                                     		<div class="col-sm-offset-2 col-sm-10">
                                                            
-                                                    			<button type="submit" name="login" class="btn btn-success btn-labeled pull-right">Sign in<span class="btn-label btn-label-right"><i class="fa fa-check"></i></span></button>
+                                                            <button type="submit" name="login" class="btn btn-labeled pull-right" style="background-color:rgb(243, 147, 235); border-color:rgb(241, 6, 53);">
+                                                                Sign in<span class="btn-label btn-label-right"><i class="fa fa-check"></i></span>
+                                                            </button>
                                                     		</div>
                                                     	</div>
                                                     </form>

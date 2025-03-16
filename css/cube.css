@@ -1,3 +1,6 @@
+body.admin-login .cube {
+    background-color: #ff5733; /* Change this to the color you want */
+}
 /* Fixed background container for animated cubes */
 .cube-container {
     position: fixed; /* Keeps cubes in place as fixed background */
