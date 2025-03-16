@@ -33,6 +33,17 @@ $query->bindParam(':status',$status,PDO::PARAM_STR);
 $query->execute();
 $msg="Subject Deactivate successfully";
 }
+
+// Delete Subject Combination
+if(isset($_GET['delid'])) {
+    $delid = intval($_GET['delid']);
+    $sql = "DELETE FROM tblsubjectcombination WHERE id = :delid";
+    $query = $dbh->prepare($sql);
+    $query->bindParam(':delid', $delid, PDO::PARAM_INT);
+    $query->execute();
+    $msg = "Subject Combination Deleted successfully";
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -178,6 +189,10 @@ else
 <a href="manage-subjectcombination.php?acid=<?php echo htmlentities($result->scid);?>" onclick="confirm('do you really want to ativate this subject');"><i class="fa fa-check" title="Acticvate Record"></i> </a><?php } else {?>
 
 <a href="manage-subjectcombination.php?did=<?php echo htmlentities($result->scid);?>" onclick="confirm('do you really want to deativate this subject');"><i class="fa fa-times" title="Deactivate Record"></i> </a>
+<a href="manage-subjectcombination.php?delid=<?php echo htmlentities($result->scid); ?>" 
+                                                               onclick="return confirm('Are you sure you want to delete this subject combination? This action cannot be undone.');">
+                                                                <i class="fa fa-trash" title="Delete"></i>
+                                                            </a>
 <?php }?>
 </td>
 </tr>

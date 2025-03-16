@@ -9,17 +9,17 @@ if(strlen($_SESSION['alogin'])=="")
     }
     else{
 
-         // Delete student functionality
+      // Delete student result functionality
     if(isset($_GET['delete'])) {
         $studentId = intval($_GET['delete']);
-        $sql = "DELETE FROM tblstudents WHERE StudentId=:studentId";
+        $sql = "DELETE FROM tblresult WHERE StudentId=:studentId";
         $query = $dbh->prepare($sql);
         $query->bindParam(':studentId', $studentId, PDO::PARAM_INT);
         
         if($query->execute()) {
-            $_SESSION['msg'] = "Student deleted successfully!";
+            $_SESSION['msg'] = "Student result deleted successfully!";
         } else {
-            $_SESSION['error'] = "Error deleting student!";
+            $_SESSION['error'] = "Error deleting student result!";
         }
 
         header("Location: manage-results.php"); // Redirect back to the same page

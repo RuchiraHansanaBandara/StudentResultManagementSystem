@@ -14,6 +14,7 @@ include('includes/config.php');
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/cube.css" media="screen">
     </head>
     <body>
         <!-- Responsive navbar-->
@@ -138,7 +139,7 @@ include('includes/config.php');
         <!-- Content section-->
 <section class="py-5">
     <div class="container my-5">
-        <div class="row justify-content-center">.
+        <div class="row justify-content-center">
             <div class="col-lg-6">
                 <h2>Notice Board</h2>
                 <hr color="#000" />
